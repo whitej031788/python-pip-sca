@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, request
 from utils.http_client import fetch_json
 from utils.models import EchoPayload
+from utils import secret_fixtures  # imported so scanners see Python secrets
 
 app = Flask(__name__)
 
